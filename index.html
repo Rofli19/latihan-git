@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brian2Gear Pamflet Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            Brian<span>2Gear</span>
+        </div>
+
+        <p>Pamflet Generator</p>
+    </header>
+
+
+    <main>
+
+        <!-- ================= FORM ================= -->
+
+        <section class="panel">
+
+            <h2>⚙️ Data Produk</h2>
+
+            <label>Nama Laptop</label>
+            <input
+                type="text"
+                id="productName"
+                value="MacBook Pro 2019"
+            >
+
+            <label>Harga</label>
+            <input
+                type="text"
+                id="price"
+                value="¥89,800"
+            >
+
+            <label>Processor</label>
+            <input
+                type="text"
+                id="processor"
+                value="Intel Core i5"
+            >
+
+            <label>RAM</label>
+            <input
+                type="text"
+                id="ram"
+                value="16GB RAM"
+            >
+
+            <label>Storage</label>
+            <input
+                type="text"
+                id="storage"
+                value="SSD 512GB"
+            >
+
+            <label>Display / GPU</label>
+            <input
+                type="text"
+                id="display"
+                value="Retina Display"
+            >
+
+            <label>Kondisi</label>
+            <input
+                type="text"
+                id="condition"
+                value="Good Condition"
+            >
+
+            <label>Status</label>
+
+            <select id="status">
+                <option>READY STOCK</option>
+                <option>PROMO</option>
+                <option>BEST SELLER</option>
+                <option>LIMITED STOCK</option>
+            </select>
+
+
+            <label>Foto Laptop</label>
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/*"
+            >
+
+
+            <button
+                id="generateBtn"
+                class="generate"
+            >
+                ✨ Generate Pamflet
+            </button>
+
+
+            <button
+                id="downloadBtn"
+                class="download"
+            >
+                ⬇ Download PNG
+            </button>
+
+        </section>
+
+
+        <!-- ================= PREVIEW ================= -->
+
+        <section class="preview-section">
+
+            <h2>Preview</h2>
+
+            <div
+                id="poster"
+                class="poster"
+            >
+
+                <div class="poster-header">
+
+                    <div class="brand">
+                        Brian<span>2Gear</span>
+                    </div>
+
+                    <div class="category">
+                        LAPTOP • MACBOOK • PC
+                    </div>
+
+                </div>
+
+
+                <div class="status" id="posterStatus">
+                    READY STOCK
+                </div>
+
+
+                <div class="image-container">
+
+                    <img
+                        id="posterImage"
+                        src=""
+                        alt="Laptop"
+                    >
+
+                </div>
+
+
+                <div class="product-name" id="posterName">
+                    MacBook Pro 2019
+                </div>
+
+
+                <div class="specs">
+
+                    <div>
+                        <small>PROCESSOR</small>
+                        <strong id="posterProcessor">
+                            Intel Core i5
+                        </strong>
+                    </div>
+
+                    <div>
+                        <small>MEMORY</small>
+                        <strong id="posterRam">
+                            16GB RAM
+                        </strong>
+                    </div>
+
+                    <div>
+                        <small>STORAGE</small>
+                        <strong id="posterStorage">
+                            SSD 512GB
+                        </strong>
+                    </div>
+
+                    <div>
+                        <small>DISPLAY</small>
+                        <strong id="posterDisplay">
+                            Retina Display
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="condition">
+
+                    CONDITION
+
+                    <strong id="posterCondition">
+                        Good Condition
+                    </strong>
+
+                </div>
+
+
+                <div class="price-label">
+                    SPECIAL PRICE
+                </div>
+
+                <div
+                    class="price"
+                    id="posterPrice"
+                >
+                    ¥89,800
+                </div>
+
+
+                <div class="order">
+
+                    <div class="order-title">
+                        🔥 ORDER NOW
+                    </div>
+
+                    <div>
+                        Brian2Gear
+                    </div>
+
+                    <small>
+                        Laptop • MacBook • PC
+                    </small>
+
+                </div>
+
+
+                <div class="footer">
+                    Your Gear. Your Style.
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
